@@ -3,9 +3,10 @@ import { container, title } from "./material-kit-react";
 const landingPageStyle = {
   container: {
     zIndex: "12",
-
     color: "#FFFFFF",
-    background: "linear-gradient(rgba(0, 0, 0, 0.5)10%, rgba(0, 0, 0, 0.5))",
+
+    background: "linear-gradient(rgba(0, 0, 0, 0.3)10%, rgba(0, 0, 0, 0.5))",
+
     border: "50px",
     margin: "-60px 30px 0px",
     borderRadius: "6px",
@@ -17,16 +18,21 @@ const landingPageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
+    margin: "0",
+    minHeight: "auto",
     color: "#FFFFFF",
-    justify: "center",
     textDecoration: "none",
+    "@media (max-width: 960px)": {
+      textAlign: "center",
+    },
   },
   subtitle: {
-    fontSize: "1.313rem",
-    maxWidth: "500px",
-    margin: "10px auto 0",
+    fontSize: "1rem",
+    marginLeft: "-30px",
+    marginRight: "-30px",
+    "@media (max-width: 960px)": {
+      textAlign: "center",
+    },
   },
   main: {
     background: "transparent",
@@ -45,6 +51,21 @@ const landingPageStyle = {
     top: "0px",
     zIndex: "-1",
     width: "100%",
+  },
+  image: {
+    textAlign: "center",
+    "@media (max-width: 600px)": {
+      width: "70%",
+    },
+  },
+  row: {
+    padding: "30px",
+    height: "200px",
+    flexDirection: "row-reverse",
+    "@media (max-width: 960px)": {
+      flexDirection: "row",
+      alignContent: "flex-end",
+    },
   },
 };
 
