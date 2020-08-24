@@ -9,12 +9,13 @@ const parallaxStyle = {
     margin: "0",
     padding: "0",
     border: "0",
-    display: "flex",
-    alignItems: "center",
+    display: "grid",
+    alignItems: "start ",
   },
   filter: {
     "&:before": {
-      background: "linear-gradient(rgba(0, 0, 0, 0)10%, rgba(0, 0, 0, 0.4))",
+      background:
+        "linear-gradient(rgba(0, 0, 0, 0)60%, rgba(255, 255, 255, 1)99%,rgba(255, 255, 255, 1)200%)",
     },
     "&:after,&:before": {
       position: "absolute",
