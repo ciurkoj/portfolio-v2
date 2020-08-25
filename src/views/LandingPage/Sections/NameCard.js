@@ -13,7 +13,7 @@ export default function NameCard() {
           container
           alignItems="flex-end"
           alignContent="flex-end"
-          justify="center"
+          justify="space-evenly"
           className={classes.row}
         >
           {" "}

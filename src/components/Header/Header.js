@@ -4,81 +4,11 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import Badge from "@material-ui/core/Badge";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
-
-const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
-    zIndex: 2,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    display: "none",
-    [theme.breakpoints.up("xs")]: {
-      display: "block",
-    },
-  },
-  search: {
-    position: "relative",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    "&:hover": {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      marginLeft: theme.spacing(1),
-      width: "auto",
-    },
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  inputRoot: {
-    color: "inherit",
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
-  sectionDesktop: {
-    display: "none",
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-    },
-  },
-  sectionMobile: {
-    display: "flex",
-    [theme.breakpoints.up("md")]: {
-      display: "none",
-    },
-  },
-}));
+import theme1 from "../../assets/jss/headerStyle";
+const useStyles = makeStyles(theme1);
 
 export default function PrimarySearchAppBar() {
   const classes = useStyles();
@@ -148,15 +78,30 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar position="static" color="transparent">
         <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title} xs={12}>
             Jakub Ciurko
           </Typography>
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton color="inherit">Resume</IconButton>
-            <IconButton color="inherit">Projects</IconButton>
-            <IconButton color="inherit">Contact me</IconButton>
+            <IconButton
+              className={classes.buttonsSectionDesktop}
+              color="inherit"
+            >
+              Resume
+            </IconButton>
+            <IconButton
+              className={classes.buttonsSectionDesktop}
+              color="inherit"
+            >
+              Projects
+            </IconButton>
+            <IconButton
+              className={classes.buttonsSectionDesktop}
+              color="inherit"
+            >
+              Contact me
+            </IconButton>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

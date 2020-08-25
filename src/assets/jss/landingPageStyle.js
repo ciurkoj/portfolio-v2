@@ -69,10 +69,10 @@ const landingPageStyle = {
   },
   image: {
     textAlign: "center",
-    "@media (max-width: 600px)": {
-      maxWidth: "60%",
+    "@media (max-width: 960px) ": {
+      maxWidth: "200px",
     },
-    "@media (max-width: 500px)": {
+    "@media (max-width: 600px)": {
       width: "50%",
     },
   },
