@@ -20,6 +20,7 @@ import styles from "../../assets/jss/landingPageStyle.js";
 
 // Sections for this page
 import ResumePage from "../ResumePage/ResumePage.js";
+import ProjectsPage from "../ProjectsPage/ProjectsPage";
 import NameCard from "./Sections/NameCard";
 import bg_image from "../../assets/img/bg.jpg";
 
@@ -45,18 +46,13 @@ export default function LandingPage(props) {
       <Container>
         <div className={classes.main}>
           <Header />
-          <Parallax
+          {/* <Parallax
             className={classes.parallax}
             filter
             image={require("../../assets/img/bg.jpg")}
-          >
-            <NameCard />
-          </Parallax>
-          <div>
-            <div>
-              <ResumePage />
-            </div>
-          </div>
+          ></Parallax> */}
+          <NameCard />
+          <ProjectsPage />
           <Footer />
         </div>
       </Container>

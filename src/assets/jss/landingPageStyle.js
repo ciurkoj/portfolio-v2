@@ -19,7 +19,7 @@ const landingPageStyle = {
     },
     zIndex: "12",
     color: "#FFFFFF",
-    marginTop: "14em",
+    marginTop: "6em",
     background: "linear-gradient(rgba(0, 0, 0, 0.3)10%, rgba(0, 0, 0, 0.5))",
 
     border: "50px",
