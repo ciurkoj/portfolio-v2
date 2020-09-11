@@ -20,7 +20,8 @@ const landingPageStyle = {
     zIndex: "12",
     color: "#FFFFFF",
     marginTop: "6em",
-    background: "linear-gradient(rgba(0, 0, 0, 0.3)10%, rgba(0, 0, 0, 0.5))",
+    background:
+      "linear-gradient(rgba(255, 255, 255, 0.1)10%, rgba(255, 255, 255, 0.2))",
 
     border: "50px",
 
@@ -35,7 +36,7 @@ const landingPageStyle = {
     position: "relative",
     margin: "0",
     minHeight: "auto",
-    color: "#FFFFFF",
+    // color: "#FFFFFF",
     textDecoration: "none",
     "@media (max-width: 960px)": {
       textAlign: "center",
