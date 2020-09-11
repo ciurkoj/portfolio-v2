@@ -21,6 +21,8 @@ import styles from "../../assets/jss/landingPageStyle.js";
 // Sections for this page
 import ResumePage from "../ResumePage/ResumePage.js";
 import NameCard from "./Sections/NameCard";
+import bg_image from "../../assets/img/bg.jpg";
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -29,21 +31,35 @@ export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div className={classes.main}>
-      <Header />
-      <Parallax
-        className={classes.parallax}
-        filter
-        image={require("../../assets/img/bg.jpg")}
-      >
-        <NameCard />
-      </Parallax>
-      <div>
-        <div>
-          <ResumePage />
+    <div
+      style={{
+        // backgroundImage: "../../assets/img/bg.jpg",
+        background: `url(${bg_image})`,
+        backgroundSize: "cover",
+        width: "auto",
+        height: "90vh",
+        maxHeight: "1000px",
+        backgroundPositionY: "85%",
+      }}
+    >
+      <Container>
+        <div className={classes.main}>
+          <Header />
+          <Parallax
+            className={classes.parallax}
+            filter
+            image={require("../../assets/img/bg.jpg")}
+          >
+            <NameCard />
+          </Parallax>
+          <div>
+            <div>
+              <ResumePage />
+            </div>
+          </div>
+          <Footer />
         </div>
-      </div>
-      <Footer />
+      </Container>
     </div>
   );
 }

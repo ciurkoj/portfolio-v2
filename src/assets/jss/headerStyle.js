@@ -11,6 +11,7 @@ const theme1 = {
   title: {
     display: "none",
     textAlign: "center",
+    fontFamily: "'Dancing Script', cursive",
     //paddingLeft: "3em",
     "@media (min-width:300px)": {
       display: "block",
@@ -48,19 +49,19 @@ const theme1 = {
     },
   },
   buttonsSectionDesktop: {
-    marginRight: "0.5em",
-    marginBottom: "10px",
-    color: "rgba(0,0,0,0.7)",
-    border: "2px",
-    borderRadius: "16px",
-    boxShadow:
-      "0 1px 1px 0px rgba(0, 0, 0, 0.05), 0 2px 2px 2px rgba(0, 0, 0, 0.05)",
-    "@media (min-width:600px)": {
-      fontSize: "2em",
-    },
-    "@media (min-width:2000px)": {
-      fontSize: "3em",
-    },
+    // marginRight: "0.5em",
+    // marginBottom: "10px",
+    // color: "rgba(0,0,0,0.7)",
+    // border: "2px",
+    // borderRadius: "16px",
+    // boxShadow:
+    //   "0 1px 1px 0px rgba(0, 0, 0, 0.05), 0 2px 2px 2px rgba(0, 0, 0, 0.05)",
+    // "@media (min-width:600px)": {
+    //   fontSize: "2em",
+    // },
+    // "@media (min-width:2000px)": {
+    //   fontSize: "3em",
+    // },
   },
 };
 export default theme1;
