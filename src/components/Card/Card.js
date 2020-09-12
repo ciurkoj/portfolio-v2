@@ -9,6 +9,8 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import contemplativeReptile from "../../assets/img/contemplative-reptile.jpg";
 import Modal from "../Modal/Modal";
+import IconButton from "@material-ui/core/IconButton";
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -43,12 +45,19 @@ export default function ImgMediaCard(props) {
             <h5>{props.projectSubtitle} </h5>
             <span>{props.projectDescription}</span>
           </p>
-          <Button colored onClick={modalCancelHandler}>
-            Close Modal
-          </Button>
+          <IconButton className={classes.buttonsSectionDesktop} color="inherit">
+            Close
+          </IconButton>
         </Modal>
       )}
-      <Card className={classes.root} style={{ marginBottom: "5rem" }}>
+      <Card
+        className={classes.root}
+        style={{
+          marginBottom: "5rem",
+          marginRight: "auto",
+          marginLeft: "auto",
+        }}
+      >
         <CardActionArea>
           <CardMedia
             component="img"

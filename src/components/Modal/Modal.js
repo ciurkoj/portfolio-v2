@@ -2,9 +2,51 @@ import React from "react";
 
 const Modal = (props) => {
   return (
-    <div className={"modal-wrapper"}>
-      <div onClick={props.onCancel} className={"modal-backdrop"} />
-      <div className={"modal-box"}>{props.children}</div>
+    <div
+      className={"modal-wrapper"}
+      style={{
+        position: "fixed",
+        top: "0",
+        bottom: "0",
+        left: "0",
+        right: "0",
+        zIndex: "3",
+      }}
+    >
+      <div
+        onClick={props.onCancel}
+        className={"modal-backdrop"}
+        style={{
+          position: "fixed",
+          top: "0",
+          bottom: "0",
+          left: "0",
+          right: "0",
+          zIndex: "1",
+          backgroundColor: "rgba(0,0,0,0.3)",
+        }}
+      />
+      <div
+        className={"modal-box"}
+        style={{
+          color: "aliceblue",
+          position: "relative",
+          marginRight: "auto",
+          marginLeft: "auto",
+          zIndex: "1",
+          //   minHeight: "30%",
+          width: "60%",
+          overflowY: "auto",
+          backgroundColor: "#171b22",
+          boxShadow: "0 0 10px rgba(0,0,0,0.25",
+          padding: "40px",
+          top: "50%",
+          //   left: "50%",
+          //   transform: "translate(-50%, -50%)",
+        }}
+      >
+        {props.children}
+      </div>
     </div>
   );
 };
