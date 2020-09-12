@@ -85,6 +85,24 @@ const landingPageStyle = {
       alignContent: "flex-end",
     },
   },
+  contactLinks: {
+    // marginRight: "0.5em",
+    backgroundColor: "rgba(0,0,0,0.2)",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "& p": {
+      margin: "5px",
+      //   "@media (max-width: 800px)": {
+      //     display: "none",
+      //   },
+    },
+    "& a": {
+      textDecoration: "none",
+      color: "inherit",
+      display: "contents",
+    },
+  },
 };
 
 export default landingPageStyle;

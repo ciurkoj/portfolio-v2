@@ -7,7 +7,7 @@ export default function ProjectsPage() {
   return (
     <Container
       style={{
-        background: "rgba(255,255,255,0.3 )",
+        background: "rgba(255,255,255,0.4 )",
         minHeight: "500px",
         marginTop: "5em",
         borderRadius: "10px",
