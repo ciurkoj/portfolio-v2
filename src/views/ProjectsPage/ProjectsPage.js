@@ -28,7 +28,7 @@ export default function ProjectsPage() {
           }}
         >
           <Typography variant="h2" gutterBottom>
-            Have a look on some of my recent projects
+            Take a look on some of my recent projects
           </Typography>
         </Grid>
         <Grid item sm={4}>

@@ -10,7 +10,10 @@ export default function NameCard() {
   const classes = useStyles();
   return (
     <div>
-      <div className={classes.container}>
+      <div
+        className={classes.container}
+        style={{ background: "rgba(255,255,255,0.4)" }}
+      >
         <Grid
           container
           alignItems="flex-end"
@@ -85,77 +88,77 @@ export default function NameCard() {
             </Typography>
           </Grid>
         </Grid> */}
-        <Grid container>
+
+        <Grid
+          container
+          style={{
+            margin: "1em",
+            fontSize: "1em",
+            marginTop: "2em",
+            borderTop: "dotted 5px",
+            padding: "1em",
+            width: "initial",
+          }}
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
           <Grid
             item
-            xs={12}
+            xs={3}
             className={classes.title}
             style={{ textAlign: "center" }}
           >
-            <Typography
-              variant="h4"
-              style={{ marginBottom: "0", marginTop: "1em" }}
-            >
+            <Typography variant="h4" style={{ marginBottom: "0" }}>
               Find me on:
             </Typography>
           </Grid>
           <Grid
-            container
-            style={{
-              margin: "1em",
-              fontSize: "1em",
-            }}
-            direction="row"
-            justify="center"
-            alignItems="center"
+            item
+            xs={2}
+            sm={3}
+            md={3}
+            xl={2}
+            className={classes.contactLinks}
           >
-            <Grid
-              item
-              xs={2}
-              sm={3}
-              md={3}
-              xl={2}
-              className={classes.contactLinks}
+            <a
+              href="https://www.linkedin.com/in/jakub-ciurko/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://www.linkedin.com/in/jakub-ciurko/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedInIcon fontSize="large" />
-                <p> LinkdedIn</p>
-              </a>
-            </Grid>
-            <Grid
-              item
-              xs={2}
-              sm={3}
-              md={3}
-              xl={2}
-              className={classes.contactLinks}
+              <LinkedInIcon fontSize="large" />
+              <p> LinkdedIn</p>
+            </a>
+          </Grid>
+          <Grid
+            item
+            xs={2}
+            sm={3}
+            md={3}
+            xl={2}
+            className={classes.contactLinks}
+          >
+            <a
+              href="https://github.com/ciurkoj"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://github.com/ciurkoj"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GitHubIcon fontSize="large" />
-                <p>GitHub</p>
-              </a>
-            </Grid>{" "}
-            <Grid
-              item
-              xs={2}
-              sm={3}
-              md={3}
-              xl={3}
-              className={classes.contactLinks}
-            >
-              <a href="mailto:ciurkoj@outlook.com">
-                <EmailIcon fontSize="large" />
-                <p>Send me an email</p>
-              </a>
-            </Grid>
+              <GitHubIcon fontSize="large" />
+              <p>GitHub</p>
+            </a>
+          </Grid>{" "}
+          <Grid
+            item
+            xs={2}
+            sm={3}
+            md={3}
+            xl={3}
+            className={classes.contactLinks}
+          >
+            <a href="mailto:ciurkoj@outlook.com">
+              <EmailIcon fontSize="large" />
+              <p>Send me an email</p>
+            </a>
           </Grid>
         </Grid>
       </div>

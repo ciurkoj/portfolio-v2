@@ -20,6 +20,7 @@ const landingPageStyle = {
     zIndex: "12",
     color: "#FFFFFF",
     marginTop: "6em",
+    marginBottom: "6em",
     background:
       "linear-gradient(rgba(255, 255, 255, 0.1)10%, rgba(255, 255, 255, 0.2))",
 
@@ -36,7 +37,7 @@ const landingPageStyle = {
     position: "relative",
     margin: "0",
     minHeight: "auto",
-    // color: "#FFFFFF",
+    color: "#102f3b",
     textDecoration: "none",
     "@media (max-width: 960px)": {
       textAlign: "center",
@@ -87,7 +88,7 @@ const landingPageStyle = {
   },
   contactLinks: {
     // marginRight: "0.5em",
-    backgroundColor: "rgba(0,0,0,0.2)",
+    backgroundColor: "rgba(0,0,0,0.1)",
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
@@ -99,7 +100,7 @@ const landingPageStyle = {
     },
     "& a": {
       textDecoration: "none",
-      color: "inherit",
+      color: "#102f3b",
       display: "contents",
     },
   },

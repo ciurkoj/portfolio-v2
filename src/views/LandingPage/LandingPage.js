@@ -23,7 +23,7 @@ import ResumePage from "../ResumePage/ResumePage.js";
 import ProjectsPage from "../ProjectsPage/ProjectsPage";
 import NameCard from "./Sections/NameCard";
 import bg_image from "../../assets/img/bg.jpg";
-
+import tatry1 from "../../assets/img/tatry1.jpg";
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -35,12 +35,12 @@ export default function LandingPage(props) {
     <div
       style={{
         // backgroundImage: "../../assets/img/bg.jpg",
-        background: `linear-gradient(rgba(227,222,234,0.1)90%, rgba(227,222,234,1)100%),url(${bg_image})`,
+        background: `linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)80%, rgba(255,255,255,1)100%),url(${tatry1})`,
         backgroundSize: "cover",
         width: "auto",
-        height: "90vh",
+        height: "60vh",
         maxHeight: "1000px",
-        backgroundPositionY: "85%",
+        // backgroundPositionY: "85%",
       }}
     >
       <Container>

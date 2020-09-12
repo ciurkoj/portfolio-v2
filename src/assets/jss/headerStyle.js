@@ -4,6 +4,7 @@ const theme1 = {
   grow: {
     flexGrow: 1,
     zIndex: 2,
+    background: "rgba(255,255,255,0.4)",
   },
   menuButton: {
     marginRight: "16px",
