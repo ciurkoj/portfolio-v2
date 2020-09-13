@@ -35,7 +35,7 @@ export default function LandingPage(props) {
     <div
       style={{
         // backgroundImage: "../../assets/img/bg.jpg",
-        background: `linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)80%, rgba(255,255,255,1)100%),url(${tatry1})`,
+        background: `linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.3)70%, rgba(197,190,183,0.5)90%,rgba(231,229,226,1)100%),url(${tatry1})`,
         backgroundSize: "cover",
         width: "auto",
         height: "60vh",

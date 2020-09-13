@@ -34,12 +34,7 @@ export default function ImgMediaCard(props) {
   return (
     <div>
       {modal && (
-        <Modal
-          canCancel
-          canConfirm
-          onCancel={modalCancelHandler}
-          onConfirm={modalConfirmHandler}
-        >
+        <Modal onCancel={modalCancelHandler} onConfirm={modalConfirmHandler}>
           <h1>{props.projectName}</h1>
           <p>
             <h5>{props.projectSubtitle} </h5>
@@ -56,6 +51,9 @@ export default function ImgMediaCard(props) {
           marginBottom: "5rem",
           marginRight: "auto",
           marginLeft: "auto",
+          height: "23em",
+          borderRadius: "10px",
+          position: "relative",
         }}
       >
         <CardActionArea>
@@ -80,7 +78,7 @@ export default function ImgMediaCard(props) {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions style={{ position: "absolute", bottom: "0" }}>
           <Button
             size="small"
             color="primary "
