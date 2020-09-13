@@ -87,8 +87,6 @@ const landingPageStyle = {
     },
   },
   contactLinks: {
-    // marginRight: "0.5em",
-    backgroundColor: "rgba(0,0,0,0.1)",
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",

@@ -60,19 +60,23 @@ export default function ImgMediaCard(props) {
       >
         <CardActionArea>
           <CardMedia
+            style={{ objectFit: "contain" }}
             component="img"
             alt="Contemplative Reptile"
             height="200"
-            image={contemplativeReptile}
+            image={
+              props.projectsImage ? props.projectsImage : contemplativeReptile
+            }
             title="Contemplative Reptile"
           />
           <CardContent onClick={startCreateEventHandler}>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              {props.projectName ? props.projectName : "Lizard"}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              {props.projectSubtitle
+                ? props.projectSubtitle
+                : "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -82,7 +86,7 @@ export default function ImgMediaCard(props) {
             color="primary "
             target="_blank"
             rel="noopener noreferrer"
-            href=""
+            href={props.githubLink ? props.githubLink : ""}
           >
             Github
           </Button>
@@ -91,7 +95,7 @@ export default function ImgMediaCard(props) {
             color="primary"
             target="_blank"
             rel="noopener noreferrer"
-            href=""
+            href={props.liveDemo ? props.liveDemo : ""}
           >
             Live Demo
           </Button>

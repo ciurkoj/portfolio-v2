@@ -2,7 +2,8 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import { Grid, Container, Typography } from "@material-ui/core";
 import contemplativeReptile from "../../assets/img/contemplative-reptile.jpg";
-
+import version2 from "../../assets/img/version2.png";
+import emoji from "react-easy-emoji";
 export default function ProjectsPage() {
   return (
     <Container
@@ -33,16 +34,15 @@ export default function ProjectsPage() {
         </Grid>
         <Grid item sm={4}>
           <Card
+            projectsImage={version2}
             style={{ height: "100px" }}
-            projectName="MyPortfolio project"
-            projectSubtitle="The main goal is to have a website where I can show all my work I've done. 
-            I'd like start a blog, so maybe some day it'll change its nature."
-            projectDescription="This website may not be well designed and but I'm just a junior developer 
-            with only some experience in coding mixed with loads of will and persistence to become a full time software developer. 
-            To build this website I've tools such as: React with React Material Design Lite and basic pack of frontend languages: JavaScript, HTML5, CSS3"
-            url={contemplativeReptile}
-            githubLink="https://github.com/jciurko/my_portfolio"
-            liveDemo="https://jciurko.github.io/my_portfolio/"
+            projectName="Portfolio V.2"
+            projectSubtitle="Here's more responsive and better designed 2nd version of my proftfolio. Created with MaterialUI"
+            projectDescription="After a few other projects, I have decided to upgrade my online portfolio. The previous version was too messed up to update it, but it was my first project in ReactJS and I'm keeping so I could see future progress. 
+            To build this website I have switched the main framework to MaterialUI as it is more popular and gives more tools than Material Design Lite. 
+            I am glad that you are reading this project's description. Have a nice day! 😃"
+            githubLink="https://github.com/ciurkoj/portfolio-v2 "
+            liveDemo="https://jciurko.github.io/portfolio-v2/"
           ></Card>
         </Grid>
         <Grid item sm={4}>
