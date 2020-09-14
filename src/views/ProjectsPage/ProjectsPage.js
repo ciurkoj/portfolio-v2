@@ -4,6 +4,11 @@ import { Grid, Container, Typography } from "@material-ui/core";
 import version2 from "../../assets/img/version2.png";
 import automation from "../../assets/img/automation.png";
 import tictactoe from "../../assets/img/tictactoe.png";
+import exchange from "../../assets/img/exchange.png";
+import onlineStore from "../../assets/img/online-store.png";
+import electricalDevice from "../../assets/img/electricalDevice.jpg";
+import bigDataProject from "../../assets/img/bigDataProject.jpg";
+import portfolioV1 from "../../assets/img/portfolioV1.png";
 export default function ProjectsPage() {
   return (
     <Container
@@ -37,13 +42,57 @@ export default function ProjectsPage() {
           <Card
             projectsImage={version2}
             style={{ height: "100px" }}
-            projectName="Portfolio V.2"
+            projectName="Portfolio v.2.0"
             projectSubtitle="Here's more responsive and better designed 2nd version of my proftfolio. Created with MaterialUI"
             projectDescription="After a few other projects, I have decided to upgrade my online portfolio. The previous version was too messed up to update it, but it was my first project in ReactJS and I'm keeping so I could see future progress. 
             To build this website I have switched the main framework to MaterialUI as it is more popular and gives more tools than Material Design Lite. 
             I am glad that you are reading this project's description. Have a nice day! 😃"
             githubLink="https://github.com/ciurkoj/portfolio-v2 "
             liveDemo="https://jciurko.github.io/portfolio-v2/"
+          ></Card>
+        </Grid>
+        <Grid item sm={4}>
+          <Card
+            projectName="Refreshed website"
+            projectSubtitle="I found an electronics company with outdated, unresponsive and slow website and simply refreshed it. A little bit of React with Material UI and it glows again."
+            projectDescription="It was a quick project, where I didn't need to think about a design. The main goal was to improve elements positioning, replace images with text to a real containers with pictures. At the end I've focused on websites speed. The old version is hosted on a slow server, if we add to it bunch of low quality pictures instead of text, we get a website where average loading time is about 10s. That is mad! In my version, the image size is matched to the screen size, which translates into an average loading time of less than 1 second.
+
+            Also, with this project I've improved my repository organising style thanks to free Material UI templates. I tried to style the website with SCSS, but eventually I've decided it won't be useful for such a small project.
+            I know my design skills are not the best, I design websites in a way I find them nice and easy to read. I hope you like it."
+            githubLink="https://github.com/ciurkoj/refreshedWebiste"
+            liveDemo="https://ciurkoj.github.io/refreshedWebiste"
+            projectsImage={electricalDevice}
+          ></Card>
+        </Grid>
+        <Grid item sm={4}>
+          <Card
+            projectsImage={bigDataProject}
+            projectName="Big Data Project"
+            projectSubtitle="A standalone app, generating maps from 49,000,000 points contained in NetCDF files. Developed with MATLAB App Designer."
+          ></Card>
+        </Grid>
+        <Grid item sm={4}>
+          <Card
+            projectName="Web Automation with Django"
+            projectSubtitle="An app build with Python frameworks Django and Selenium, deployed on Google Cloud Platform, styled with BootStrap."
+            projectDescription="The idea is to mix Django with Selenium Web Driver to automate browser-based strategy game.
+          I just want to transfer resources from town to town and the max capacity of single transport is too small, so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue.[Latest update: I've decided to move from heroku to GCP, GCP is more professional tool and fulfils all project's needs.]"
+            githubLink="https://github.com/jciurko/web_automation"
+            liveDemo="https://bottyfy.nw.r.appspot.com"
+            projectsImage={automation}
+          ></Card>
+        </Grid>
+
+        <Grid item sm={4}>
+          <Card
+            projectsImage={onlineStore}
+            projectName="An online shop"
+            projectSubtitle="This project is about REST API and its backcend implementation in Django, Python with frontend made in React."
+            projectDescription="The projects started when a friend of mine aske me if I could make a website where he could collect orders from customers for his pizza place. I'm not experienced enough to deliver a fully functional online shop with payment gates, but then I realised, it could be a great project for my portfolio.
+            A project, that combines 2 programming langueages and is hosted on Google Cloud Platform. I didn't know much about backend programming in Python and I had a little bit of experience in React. I started with some videos on YouTube, about a blog made in Django. It helped me to implement a user registration procedure and from now on a new user could register into my remote database on GCP. The next step was to add JavaScript to the project. I started with a simple UI with some dummy data, just to have a basic interface (homepage, user profile and different navbars for logged in users. When it's been done I realised I need to use Redux to connect backend with fronted.
+            The final result was a website with simple CMS, where an admin could insert new offers onto homepage and new users could login and see their profiles."
+            githubLink="https://github.com/ciurkoj/shop"
+            liveDemo=""
           ></Card>
         </Grid>
         <Grid item sm={4}>
@@ -64,13 +113,12 @@ export default function ProjectsPage() {
         </Grid>
         <Grid item sm={4}>
           <Card
-            projectName="Web Automation with Django"
-            projectSubtitle="Project in progress, app build with Python Django, deployed on Google Cloud Platform, styled with BootStrap."
-            projectDescription="The idea is to mix Django with Selenium Web Driver to automate browser-based strategy game.
-          I just want to transfer resources from town to town and the max capacity of single transport is too small, so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue.[Latest update: I've decided to move from heroku to GCP, GCP is more professional tool and fulfils all project's needs.]"
-            githubLink="https://github.com/jciurko/web_automation"
-            liveDemo="https://bottyfy.nw.r.appspot.com"
-            projectsImage={automation}
+            projectsImage={portfolioV1}
+            projectName="My portfolio project"
+            projectSubtitle="A web developer needs a portfolio and this is how I started my journey with frontend pretty much not knowing nothing about React."
+            projectDescription="This website may not be well designed but I'm just a junior developer 
+            with only some experience in coding mixed with loads of will and persistence to become a full time software developer.
+            To build this website I've tools such as: React with React Material Design Lite and basic pack of frontend languages: JavaScript, HTML5, CSS3. I keep this website to remind me where I've started."
           ></Card>
         </Grid>
         <Grid item sm={4}>
@@ -83,27 +131,9 @@ export default function ProjectsPage() {
           In the project we have used Node.js, Handlebars with Koa.js framework (newer Express.js) keeping the standard of ES6. 
           The project taught me a lot about working in a team, especially how to assing tasks, how to deal with delays 
           and how help others if they face a problem. For example we have used GitHub Project Issues to manage tasks previously discussed on MS Teams or What'sApp."
-            projectsImage="https://www.pngmart.com/files/7/Exchange-PNG-Transparent-Picture.png"
+            projectsImage={exchange}
             githubLink="https://github.com/jciurko/ExchangeBay"
           ></Card>
-        </Grid>
-        <Grid item sm={4}>
-          <Card></Card>
-        </Grid>
-        <Grid item sm={4}>
-          <Card></Card>
-        </Grid>
-        <Grid item sm={4}>
-          <Card></Card>
-        </Grid>
-        <Grid item sm={4}>
-          <Card></Card>
-        </Grid>
-        <Grid item sm={4}>
-          <Card></Card>
-        </Grid>
-        <Grid item sm={4}>
-          <Card></Card>
         </Grid>
       </Grid>
     </Container>
