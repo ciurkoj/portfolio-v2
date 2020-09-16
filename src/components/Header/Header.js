@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -79,7 +80,10 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" color="transparent">
         <Toolbar>
           <Typography className={classes.title} xs={12}>
-            Jakub Ciurko
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+              {" "}
+              Jakub Ciurko
+            </Link>
           </Typography>
 
           <div className={classes.grow} />
@@ -88,7 +92,13 @@ export default function PrimarySearchAppBar() {
               className={classes.buttonsSectionDesktop}
               color="inherit"
             >
-              Resume
+              <Link
+                to="/resume-page"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                {" "}
+                Resume
+              </Link>
             </IconButton>
             <IconButton
               className={classes.buttonsSectionDesktop}

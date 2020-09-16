@@ -20,8 +20,12 @@ import styles from "../../assets/jss/resumePageStyles";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionBasics() {
+export default function ResumePage() {
   const classes = useStyles();
 
-  return <div></div>;
+  return (
+    <div
+      style={{ height: "500px", width: "500px", backgroundColor: "red" }}
+    ></div>
+  );
 }

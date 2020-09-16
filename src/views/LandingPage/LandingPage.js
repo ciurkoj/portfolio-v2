@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // nodejs library that concatenates classes
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -19,11 +20,12 @@ import Paper from "@material-ui/core/Paper";
 import styles from "../../assets/jss/landingPageStyle.js";
 
 // Sections for this page
-import ResumePage from "../ResumePage/ResumePage.js";
+import ResumePage from "../ResumePage/ResumePage";
 import ProjectsPage from "../ProjectsPage/ProjectsPage";
 import NameCard from "./Sections/NameCard";
 import bg_image from "../../assets/img/bg.jpg";
 import tatry1 from "../../assets/img/tatry1.jpg";
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -43,19 +45,63 @@ export default function LandingPage(props) {
         // backgroundPositionY: "85%",
       }}
     >
-      <Container>
-        <div className={classes.main}>
-          <Header />
-          {/* <Parallax
+      <Router>
+        <Container>
+          <div className={classes.main}>
+            {/* <Parallax
             className={classes.parallax}
             filter
             image={require("../../assets/img/bg.jpg")}
           ></Parallax> */}
-          <NameCard />
-          <ProjectsPage />
-          <Footer />
-        </div>
-      </Container>
+            <Header />
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={(props) => (
+                  <div>
+                    <NameCard />
+                    <ProjectsPage />
+                  </div>
+                )}
+              ></Route>
+              <Route
+                path="/resume-page"
+                render={(props) => <ResumePage />}
+              ></Route>
+            </Switch>
+
+            <Footer />
+          </div>
+        </Container>
+      </Router>
     </div>
+
+    // <Router>
+    //   <div>
+    //     <Header />
+    //     <Switch>
+    //       <Route
+    //         exact
+    //         path="/"
+    //         render={(props) => (
+    //           <div>
+    //             <NameCard />
+    //             <ProjectsPage />
+    //           </div>
+    //         )}
+    //       ></Route>
+
+    //       <Route
+    //         path="/resume-page"
+    //         render={(props) => (
+    //           <div>
+    //             <ResumePage />
+    //           </div>
+    //         )}
+    //       ></Route>
+    //     </Switch>
+    //   </div>
+    // </Router>
   );
 }
