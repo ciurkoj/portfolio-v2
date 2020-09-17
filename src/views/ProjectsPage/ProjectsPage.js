@@ -76,16 +76,18 @@ export default function ProjectsPage() {
             projectsImage={bigDataProject}
             projectName="Big Data Project"
             projectSubtitle="A standalone app, generating maps from 49,000,000 points contained in NetCDF files. Developed with MATLAB App Designer."
+            projectDescription="The project itself is an overdeveloped university task. The goal was just to visualise a big data files with a simple MATLAB script- no UI, no video exporting. As I developed, I have noticed its potential and simply implement new ideas. 
+            Final product delivers an App in a script, as well as complete installer to install the app on Windows machines. With this App you can visualise data from 2 different sources, present it frame by frame with colour blindness adjustments and export a video in various resolution."
           ></Card>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Card
-            projectName="Web Automation with Django"
+            projectName="Web Automation"
             projectSubtitle="An app build with Python frameworks Django and Selenium, deployed on Google Cloud Platform, styled with BootStrap."
             projectDescription="The idea is to mix Django with Selenium Web Driver to automate browser-based strategy game.
-          I just want to transfer resources from town to town and the max capacity of single transport is too small, so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue.[Latest update: I've decided to move from heroku to GCP, GCP is more professional tool and fulfils all project's needs.]"
+          I just want to transfer resources from town to town and the max capacity of single transport is too small, so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue.[Update: Project is inactive due to costs of running.]"
             githubLink="https://github.com/jciurko/web_automation"
-            liveDemo="https://bottyfy.nw.r.appspot.com"
+            liveDemo=""
             projectsImage={automation}
           ></Card>
         </Grid>
@@ -97,7 +99,8 @@ export default function ProjectsPage() {
             projectSubtitle="This project is about REST API and its backcend implementation in Django, Python with frontend made in React."
             projectDescription="The projects started when a friend of mine aske me if I could make a website where he could collect orders from customers for his pizza place. I'm not experienced enough to deliver a fully functional online shop with payment gates, but then I realised, it could be a great project for my portfolio.
             A project, that combines 2 programming langueages and is hosted on Google Cloud Platform. I didn't know much about backend programming in Python and I had a little bit of experience in React. I started with some videos on YouTube, about a blog made in Django. It helped me to implement a user registration procedure and from now on a new user could register into my remote database on GCP. The next step was to add JavaScript to the project. I started with a simple UI with some dummy data, just to have a basic interface (homepage, user profile and different navbars for logged in users. When it's been done I realised I need to use Redux to connect backend with fronted.
-            The final result was a website with simple CMS, where an admin could insert new offers onto homepage and new users could login and see their profiles."
+            The final result was a website with simple CMS, where an admin could insert new offers onto homepage and new users could login and see their profiles.
+            [Update: Project is inactive due to costs of running.]"
             githubLink="https://github.com/ciurkoj/shop"
             liveDemo=""
           ></Card>

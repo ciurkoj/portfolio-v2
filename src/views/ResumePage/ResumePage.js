@@ -25,7 +25,17 @@ export default function ResumePage() {
 
   return (
     <div
-      style={{ height: "500px", width: "500px", backgroundColor: "red" }}
-    ></div>
+      style={{
+        backgroundColor: "aliceblue",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "200px",
+        textAlign: "center",
+        marginTop: "5em",
+      }}
+    >
+      <p> Sorry, this page is coming soon.</p>
+    </div>
   );
 }
