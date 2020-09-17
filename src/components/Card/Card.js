@@ -16,6 +16,9 @@ const useStyles = makeStyles({
     maxWidth: 345,
     height: "24em",
     "@media (max-width: 1020px)": { height: "25em" },
+    marginRight: "0.5em",
+    marginLeft: "0.5em",
+    "@media (max-width: 600px)": { marginRight: "auto", marginLeft: "auto" },
   },
   projectName: {
     fontSize: "x-large",
@@ -70,8 +73,7 @@ export default function ImgMediaCard(props) {
         className={classes.root}
         style={{
           marginBottom: "5rem",
-          marginRight: "0.5em",
-          marginLeft: "0.5em",
+
           height: "23em",
           borderRadius: "10px",
           position: "relative",

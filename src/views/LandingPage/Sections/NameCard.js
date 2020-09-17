@@ -92,11 +92,12 @@ export default function NameCard() {
           container
           className={classes.findmeSection}
           style={{
-            margin: "1em",
             fontSize: "1em",
-            marginTop: "2em",
+            // marginTop: "2em",
             borderTop: "dotted 5px",
             padding: "1em",
+            paddingRight: "0",
+            paddingLeft: "0",
             width: "initial",
           }}
           direction="row"
@@ -105,12 +106,12 @@ export default function NameCard() {
         >
           <Grid
             item
-            xs={5}
+            xs={3}
             sm={3}
             // className={classes.title}
-            // style={{ textAlign: "center" }}
+            style={{ display: "contents" }}
           >
-            <Typography className={classes.findme} style={{}}>
+            <Typography className={classes.findme} style={{ minWidth: "7rem" }}>
               Find me on:
             </Typography>
           </Grid>
@@ -121,23 +122,31 @@ export default function NameCard() {
             md={2}
             xl={2}
             className={classes.contactLinks}
+            style={{ display: "contents" }}
           >
             <a
               href="https://www.linkedin.com/in/jakub-ciurko/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedInIcon fontSize="large" />
+              <LinkedInIcon />
               <p> LinkdedIn</p>
             </a>
           </Grid>
-          <Grid item xs={2} md={2} xl={2} className={classes.contactLinks}>
+          <Grid
+            item
+            xs={2}
+            sm={2}
+            md={2}
+            xl={2}
+            className={classes.contactLinks}
+          >
             <a
               href="https://github.com/ciurkoj"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon fontSize="large" />
+              <GitHubIcon />
               <p>GitHub</p>
             </a>
           </Grid>{" "}
@@ -148,9 +157,10 @@ export default function NameCard() {
             md={3}
             xl={3}
             className={classes.contactLinks}
+            style={{ display: "contents" }}
           >
             <a href="mailto:ciurkoj@outlook.com">
-              <EmailIcon fontSize="large" />
+              <EmailIcon />
               <p>Send me an email</p>
             </a>
           </Grid>

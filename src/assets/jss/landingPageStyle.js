@@ -47,11 +47,19 @@ const landingPageStyle = {
     marginBottom: "0",
     fontSize: "x-large",
     color: "#102f3b",
-    "@media(max-width:425px)": {
+    textAlign: "end",
+    "@media(max-width:767px)": {
       fontSize: "large",
+    },
+    "@media(max-width:600px)": {
+      textAlign: "start",
     },
   },
   findmeSection: {
+    margin: "2em 0 1em",
+    "@media(max-width:960px)": {
+      margin: "0",
+    },
     "& a": {
       "& p": {
         "@media(max-width:425px)": {
@@ -108,7 +116,7 @@ const landingPageStyle = {
     alignItems: "center",
     justifyContent: "center",
     "& p": {
-      margin: "5px",
+      margin: "5px 0 5px",
       //   "@media (max-width: 800px)": {
       //     display: "none",
       //   },
