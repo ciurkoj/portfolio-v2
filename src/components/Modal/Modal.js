@@ -30,7 +30,7 @@ const Modal = (props) => {
         className={"modal-box"}
         style={{
           color: "aliceblue",
-          position: "relative",
+          position: "absolute",
           marginRight: "auto",
           marginLeft: "auto",
           zIndex: "1",
@@ -40,9 +40,16 @@ const Modal = (props) => {
           backgroundColor: "rgb(54 64 78)",
           boxShadow: "0 0 10px rgba(0,0,0,0.25",
           padding: "40px",
+
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
           top: "50%",
-          //   left: "50%",
-          //   transform: "translate(-50%, -50%)",
+          left: "50%",
+
+          transform: "translate(-50%, -50%)",
+          "@media (max-width:600px)": {},
         }}
       >
         {props.children}

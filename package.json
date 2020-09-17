@@ -1,6 +1,6 @@
 {
   "name": "portfolio_v2",
-  "homepage": "https://ciurkoj.github.io/portfolioV2",
+  "homepage": "https://ciurkoj.github.io/portfolio-v2/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "emoji-picker-react": "^3.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.1.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },

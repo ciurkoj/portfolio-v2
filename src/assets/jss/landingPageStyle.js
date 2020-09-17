@@ -8,6 +8,12 @@ const landingPageStyle = {
     "@media (min-width: 576px)": {
       maxWidth: "440px",
     },
+    "@media (min-width: 425px)": {
+      marginTop: "8em",
+    },
+    "@media (max-width: 960px)": {
+      marginTop: "8em",
+    },
     "@media (min-width: 768px)": {
       maxWidth: "680px",
     },

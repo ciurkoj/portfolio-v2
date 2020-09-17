@@ -64,7 +64,14 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton color="inherit">Resume</IconButton>
+        <IconButton color="inherit">
+          <Link
+            to="/portfolio-v2/resume-page"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Resume
+          </Link>
+        </IconButton>
       </MenuItem>
       <MenuItem>
         <IconButton color="inherit">Projects</IconButton>
@@ -80,8 +87,10 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" color="transparent">
         <Toolbar>
           <Typography className={classes.title} xs={12}>
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-              {" "}
+            <Link
+              to="/portfolio-v2"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               Jakub Ciurko
             </Link>
           </Typography>
@@ -93,7 +102,7 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <Link
-                to="/resume-page"
+                to="/portfolio-v2/resume-page"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 {" "}

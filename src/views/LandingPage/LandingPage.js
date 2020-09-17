@@ -26,11 +26,18 @@ import NameCard from "./Sections/NameCard";
 import bg_image from "../../assets/img/bg.jpg";
 import tatry1 from "../../assets/img/tatry1.jpg";
 
+import ReactGA from "react-ga";
+
+function initializeReactGA() {
+  ReactGA.initialize("UA-168054630-1");
+  ReactGA.pageview("/portfolio-v2");
+}
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
+  initializeReactGA();
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -57,7 +64,7 @@ export default function LandingPage(props) {
             <Switch>
               <Route
                 exact
-                path="/"
+                path="/portfolio-v2"
                 render={(props) => (
                   <div>
                     <NameCard />
@@ -66,7 +73,7 @@ export default function LandingPage(props) {
                 )}
               ></Route>
               <Route
-                path="/resume-page"
+                path="/portfolio-v2/resume-page"
                 render={(props) => <ResumePage />}
               ></Route>
             </Switch>

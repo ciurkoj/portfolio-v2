@@ -28,6 +28,7 @@ const useStyles = makeStyles({
     objectFit: "contain",
     height: "200px",
     "@media (max-width: 960px)": { height: "10em" },
+    "@media (max-width: 600px)": { objectFit: "cover" },
   },
 });
 
@@ -64,6 +65,7 @@ export default function ImgMediaCard(props) {
               color: "aliceblue",
               fontSize: "large",
             }}
+            onClick={modalCancelHandler}
           >
             X
           </Button>
