@@ -37,7 +37,7 @@ const Modal = (props) => {
           //   minHeight: "30%",
           width: "60%",
           overflowY: "auto",
-          backgroundColor: "#171b22",
+          backgroundColor: "rgb(54 64 78)",
           boxShadow: "0 0 10px rgba(0,0,0,0.25",
           padding: "40px",
           top: "50%",

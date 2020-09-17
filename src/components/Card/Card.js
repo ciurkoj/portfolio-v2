@@ -37,12 +37,22 @@ export default function ImgMediaCard(props) {
         <Modal onCancel={modalCancelHandler} onConfirm={modalConfirmHandler}>
           <h1>{props.projectName}</h1>
           <p>
-            <h5>{props.projectSubtitle} </h5>
+            <h4>{props.projectSubtitle} </h4>
             <span>{props.projectDescription}</span>
           </p>
-          <IconButton className={classes.buttonsSectionDesktop} color="inherit">
-            Close
-          </IconButton>
+          <Button
+            className={classes.buttonsSectionDesktop}
+            style={{
+              position: "absolute",
+              top: "1em",
+              right: "1em",
+              height: "2em",
+              color: "aliceblue",
+              fontSize: "large",
+            }}
+          >
+            X
+          </Button>
         </Modal>
       )}
       <Card
@@ -58,6 +68,7 @@ export default function ImgMediaCard(props) {
       >
         <CardActionArea>
           <CardMedia
+            onClick={startCreateEventHandler}
             style={{ objectFit: "contain" }}
             component="img"
             alt="Contemplative Reptile"
