@@ -32,7 +32,6 @@ export default function NameCard() {
             }}
           >
             <img
-              zIndex="2"
               className={classes.image}
               alt="complex"
               src="https://www.shareicon.net/data/256x256/2016/10/11/841505_man_512x512.png"
@@ -91,6 +90,7 @@ export default function NameCard() {
 
         <Grid
           container
+          className={classes.findmeSection}
           style={{
             margin: "1em",
             fontSize: "1em",
@@ -105,11 +105,12 @@ export default function NameCard() {
         >
           <Grid
             item
-            xs={3}
-            className={classes.title}
-            style={{ textAlign: "center" }}
+            xs={5}
+            sm={3}
+            // className={classes.title}
+            // style={{ textAlign: "center" }}
           >
-            <Typography variant="h4" style={{ marginBottom: "0" }}>
+            <Typography className={classes.findme} style={{}}>
               Find me on:
             </Typography>
           </Grid>
@@ -117,7 +118,7 @@ export default function NameCard() {
             item
             xs={2}
             sm={3}
-            md={3}
+            md={2}
             xl={2}
             className={classes.contactLinks}
           >
@@ -130,14 +131,7 @@ export default function NameCard() {
               <p> LinkdedIn</p>
             </a>
           </Grid>
-          <Grid
-            item
-            xs={2}
-            sm={3}
-            md={3}
-            xl={2}
-            className={classes.contactLinks}
-          >
+          <Grid item xs={2} md={2} xl={2} className={classes.contactLinks}>
             <a
               href="https://github.com/ciurkoj"
               target="_blank"
@@ -150,7 +144,7 @@ export default function NameCard() {
           <Grid
             item
             xs={2}
-            sm={3}
+            sm={4}
             md={3}
             xl={3}
             className={classes.contactLinks}

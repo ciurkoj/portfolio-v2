@@ -14,6 +14,17 @@ import IconButton from "@material-ui/core/IconButton";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    height: "24em",
+    "@media (max-width: 1020px)": { height: "25em" },
+  },
+  projectName: {
+    fontSize: "x-large",
+    "@media (max-width: 960px)": { fontSize: "large" },
+  },
+  image: {
+    objectFit: "contain",
+    height: "200px",
+    "@media (max-width: 960px)": { height: "10em" },
   },
 });
 
@@ -59,8 +70,8 @@ export default function ImgMediaCard(props) {
         className={classes.root}
         style={{
           marginBottom: "5rem",
-          marginRight: "auto",
-          marginLeft: "auto",
+          marginRight: "0.5em",
+          marginLeft: "0.5em",
           height: "23em",
           borderRadius: "10px",
           position: "relative",
@@ -69,17 +80,22 @@ export default function ImgMediaCard(props) {
         <CardActionArea>
           <CardMedia
             onClick={startCreateEventHandler}
-            style={{ objectFit: "contain" }}
+            className={classes.image}
+            style={{}}
             component="img"
             alt="Contemplative Reptile"
-            height="200"
+            // height="200"
             image={
               props.projectsImage ? props.projectsImage : contemplativeReptile
             }
             title="Contemplative Reptile"
           />
           <CardContent onClick={startCreateEventHandler}>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              className={classes.projectName}
+              component="h2"
+            >
               {props.projectName ? props.projectName : "Lizard"}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">

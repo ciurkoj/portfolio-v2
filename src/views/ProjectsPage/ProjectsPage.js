@@ -9,7 +9,13 @@ import onlineStore from "../../assets/img/online-store.png";
 import electricalDevice from "../../assets/img/electricalDevice.jpg";
 import bigDataProject from "../../assets/img/bigDataProject.jpg";
 import portfolioV1 from "../../assets/img/portfolioV1.png";
+import styles from "../../assets/jss/landingPageStyle.js";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(styles);
 export default function ProjectsPage() {
+  const classes = useStyles();
+
   return (
     <Container
       style={{
@@ -33,12 +39,13 @@ export default function ProjectsPage() {
             maxWidth: "80%",
             textAlign: "center",
           }}
+          xs={12}
         >
-          <Typography variant="h2" gutterBottom>
+          <Typography className={classes.projectsPage} gutterBottom>
             Take a look on some of my recent projects
           </Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectsImage={version2}
             style={{ height: "100px" }}
@@ -51,7 +58,7 @@ export default function ProjectsPage() {
             liveDemo="https://jciurko.github.io/portfolio-v2/"
           ></Card>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item item xs={12} sm={6} md={4}>
           <Card
             projectName="Refreshed website"
             projectSubtitle="I found an electronics company with outdated, unresponsive and slow website and simply refreshed it. A little bit of React with Material UI and it glows again."
@@ -64,14 +71,14 @@ export default function ProjectsPage() {
             projectsImage={electricalDevice}
           ></Card>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectsImage={bigDataProject}
             projectName="Big Data Project"
             projectSubtitle="A standalone app, generating maps from 49,000,000 points contained in NetCDF files. Developed with MATLAB App Designer."
           ></Card>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectName="Web Automation with Django"
             projectSubtitle="An app build with Python frameworks Django and Selenium, deployed on Google Cloud Platform, styled with BootStrap."
@@ -83,7 +90,7 @@ export default function ProjectsPage() {
           ></Card>
         </Grid>
 
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectsImage={onlineStore}
             projectName="An online shop"
@@ -95,7 +102,7 @@ export default function ProjectsPage() {
             liveDemo=""
           ></Card>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectsImage={tictactoe}
             style={{ height: "100px" }}
@@ -111,7 +118,7 @@ export default function ProjectsPage() {
             liveDemo="https://ciurkoj.github.io/tictactoe/"
           ></Card>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectsImage={portfolioV1}
             projectName="My portfolio project"
@@ -121,7 +128,7 @@ export default function ProjectsPage() {
             To build this website I've tools such as: React with React Material Design Lite and basic pack of frontend languages: JavaScript, HTML5, CSS3. I keep this website to remind me where I've started."
           ></Card>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Card
             projectName="ExchangeBay"
             projectSubtitle="The final product allows users to upload images, tracks transactions, 
